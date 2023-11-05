@@ -44,6 +44,7 @@ input[type="submit"] {
   text-decoration: none;
   cursor: pointer;
 }
+/* dashboard */
 /* Layout , Mengatur desain header*/
 header {
   background: #1fcb9d;
@@ -96,6 +97,59 @@ footer {
 .menu a:hover {
   background: #000;
 }
+/* Layout , Mengatur desain header*/
+header {
+  background: #1fcb9d;
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 20px;
+}
+/*Mengatur lebar menu 15% dengan background hitam */
+aside {
+  flex: 15%;
+  background: #30423d;
+}
+/*Mengatur lebar konten utama 85% dengan background putih */
+section.main {
+  flex: 85%;
+  background: #fff;
+  min-height: 530px;
+  padding: 15px 20px;
+}
+/* Mengatur footer dengan background abu-abu dan text ditengah*/
+footer {
+  background: #ccc;
+  color: #555;
+  padding: 20px;
+  text-align: center;
+}
+/*Mengatur layout pada layar kecil(responsive) */
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+}
+/* Navigasi ,Membuang padding tag ul*/
+.menu {
+  padding: 0;
+}
+/*Menambah border bawah tag li */
+.menu li {
+  border-bottom: 1px dotted #444;
+}
+/*Mengatur desain menu yang dibuat dengan tag a */
+.menu a {
+  display: block;
+  padding: 20px 20px;
+  list-style: none;
+  color: #fff;
+  text-decoration: none;
+}
+/*Mengganti background manu ketika ditunjuk mouse */
+.menu a:hover {
+  background: #000;
+}
+/* css tabel */
 /* Halaman table,Mengatur judul halaman dengan border bawah */
 .judul {
   color: #555;
@@ -138,6 +192,7 @@ footer {
 .tombol.hapus {
   background: #fc4c4c;
 }
+/* data pegawai */
 /* Halaman Form, Mengatur form-group agar tidak terpengaru float */
 .form-group {
   clear: both;
